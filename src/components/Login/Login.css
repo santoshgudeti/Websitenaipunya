@@ -1,0 +1,80 @@
+.login-modal .modal-content {
+  background-color: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: var(--text-primary);
+}
+
+.custom-input {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.custom-input:focus {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+  color: var(--text-primary);
+}
+
+.custom-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social-login-buttons .btn {
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-login-buttons .btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sign-in-btn {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.forgot-password-link,
+.signup-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0;
+}
+
+.forgot-password-link:hover,
+.signup-link:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.terms-text {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.terms-text a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.terms-text a:hover {
+  text-decoration: underline;
+}

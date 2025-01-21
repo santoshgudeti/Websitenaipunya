@@ -1,0 +1,111 @@
+.chat-carousel-section {
+  background-color: var(--dark-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.chat-carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.custom-carousel {
+  position: relative;
+}
+
+.carousel-content {
+  padding: 20px;
+  color: var(--text-primary);
+}
+
+.chat-screen-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.chat-screen-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 11, 30, 0) 0%,
+    rgba(10, 11, 30, 0.1) 100%
+  );
+  pointer-events: none;
+}
+
+.carousel-control-icon {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(100, 108, 255, 0.1);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: rgba(100, 108, 255, 0.2);
+  opacity: 1;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 3px;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .chat-screen-wrapper {
+    margin: 0 -20px;
+    border-radius: 0;
+  }
+  
+  .chat-screen-image {
+    border-radius: 0;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-control-icon {
+    font-size: 20px;
+  }
+}
