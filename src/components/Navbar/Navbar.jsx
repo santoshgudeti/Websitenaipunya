@@ -1,37 +1,61 @@
 import { useState } from 'react';
-import { Nav, Container, Button } from 'react-bootstrap';
-
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import Login from '../Login/Login';
-
-function Navbar() {
+ // Import Link for smooth scrolling
+function CustomNavbar() {
   const [showLogin, setShowLogin] = useState(false);
-
-
- 
 
   return (
     <>
-      <Nav className="custom-nav py-1">
+      <Navbar expand="lg" bg="blue" className="custom-nav sticky-top  py-3">
         <Container>
-        
+          {/* Brand/Logo */}
+          <Navbar.Brand href="#home" className="d-flex align-items-center text-white">
+            <img
+              src="/naipunya_logo.png"
+              alt="Logo"
+              style={{ width: "50px", height: "50px", marginRight: "10px" }}
+            />
+            <span>Naipunya.AI</span>
+          </Navbar.Brand>
 
-          <div className="d-flex gap-2 align-items-center  justify-content-center align-items-center">
-          <Nav.Item className="logo d-flex justify-content-center align-items-center bg-white rounded-circle p-2" style={{ width: "50px", height: "50px" }}>
-          <img src="/naipunya_logo.png" alt="Logo" style={{ maxWidth: "250%", maxHeight: "250%" }} />
-        </Nav.Item>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#capabilities">Capabilities</Nav.Link>
-            <Nav.Link href="#products">Products</Nav.Link>
-            <Button className="btn">
-              Sign In
-            </Button>
-          </div>
+          {/* Toggler for Mobile View */}
+          <Navbar.Toggle aria-controls="navbar-content bg-white border-white" className="bg-white border-white" />
+
+          {/* Navbar Content */}
+          <Navbar.Collapse id="navbar-content gap-2">
+            <Nav className="ms-auto">
+            <Nav.Link href="/" className="text-white text-decoration-underline">
+                Home
+              </Nav.Link>
+              <Nav.Link href="#features" className="text-white">
+                Features
+              </Nav.Link>
+              <Nav.Link href="#capabilities" className="text-white">
+                Capabilities
+              </Nav.Link>
+              <Nav.Link href="#products" className="text-white">
+                Products
+              </Nav.Link>
+              <Nav.Link href="/about" className="text-white">
+              About Us
+              </Nav.Link>
+
+              <Button
+                className="btn btn-light"
+                onClick={() => setShowLogin(true)}
+              >
+                Sign In
+              </Button>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
-      </Nav>
+      </Navbar>
 
-      <Login show={showLogin} />
+      {/* Login Component */}
+      <Login show={showLogin} onHide={() => setShowLogin(false)} />
     </>
   );
 }
 
-export default Navbar;
+export default CustomNavbar;

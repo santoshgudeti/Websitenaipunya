@@ -13,25 +13,25 @@ function ChatCarousel() {
     {
       id: 2,
       image: "/2.png",
-      title: "Our Products",
+      title: "Our Services",
       description: "Flow Capture"
     },
     {
       id: 3,
       image: "/3.png",
-       title: "Our Products",
+       title: "Our Services",
       description: "Flow Capture"
     },
     {
       id: 4,
       image: "/4.png",
-      title: "Our Products",
+      title: "Our Services",
       description: "Flow Capture"
     },
     {
       id: 5,
       image: "/5.png",
-      title: "Our Products",
+      title: "Our Services",
       description: "Flow Capture"
     },
     {
@@ -43,7 +43,7 @@ function ChatCarousel() {
     {
       id: 7,
       image: "/p1.png",
-       title: "Our Products",
+       title: "Our Services",
       description: "Flow Capture"
     },
     {

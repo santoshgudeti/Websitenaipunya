@@ -7,10 +7,10 @@ function AIEngineer() {
       <Container>
         <Row className="align-items-center">
           <Col lg={6} data-aos="fade-right">
-            <img src="/ai1.png" alt="AI Engineer" className="img-fluid rounded-5 border border-black border-2" />
+            <img src="/ai1.png" alt="AI Engineer" className="img-fluid rounded-5 border mb-3 border-black border-2" />
           </Col>
           <Col lg={6} data-aos="fade-left">
-            <h2 className="mb-4">Our AI Engineer Builds Applied AI Systems And Agents</h2>
+            <h2 className="text-white mb-4">Our AI Engineer Builds Applied AI Systems And Agents</h2>
             <div className="feature-list">
               <div className="feature-item">
                 <FaRobot className="feature-icon" />

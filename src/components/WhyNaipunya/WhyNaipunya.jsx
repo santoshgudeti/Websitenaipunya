@@ -5,31 +5,31 @@ import { BsShieldLockFill } from 'react-icons/bs';
 function WhyAbacus() {
   const features = [
     {
-      icon: <FaDatabase />,
-      title: "Trusted by Fortune 500 Companies",
-      description: "Enterprise-grade solutions trusted by industry leaders"
+      icon: <FaCode />,
+      title: "Seamless System Integration",
+      description: "Integrating AI effortlessly into your existing workflows for instant impact"
     },
     {
-      icon: <FaCode />,
-      title: "Leader in Open-Source AI Research",
-      description: "Cutting-edge AI research and development"
+      icon: <FaDatabase />,
+      title: "Industry-Specific Insights",
+      description: "Crafting AI systems tailored to the unique demands of your sector"
     },
     {
       icon: <FaMicrochip />,
-      title: "State Of The Art End-to-End AI Platform",
-      description: "Complete AI lifecycle management"
+      title: "Agentic AI Excellence",
+      description: "Building autonomous solutions that adapt, learn, and deliver unmatched precision"
     },
     {
       icon: <BsShieldLockFill />,
-      title: "Large Scale With Enterprise Class Security",
-      description: "Secure and scalable infrastructure"
+      title: "Reliable and Secure AI",
+      description: "Ensuring every solution is built on a foundation of trust, security, and reliability"
     }
   ];
 
   return (
     <section className="why-section py-5">
       <Container>
-        <h2 className="text-center mb-5" data-aos="fade-up">Why Naipunya.AI?</h2>
+        <h2 className="text-center text-white mb-5" data-aos="fade-up">Why Naipunya.AI?</h2>
         <Row>
           {features.map((item, index) => (
             <Col key={index} md={6} lg={3} className="mb-4" data-aos="fade-up" data-aos-delay={index * 100}>

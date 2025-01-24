@@ -5,31 +5,31 @@ import { FaUserCog } from 'react-icons/fa';
 function Capabilities() {
   const capabilities = [
     {
-      icon: <BsGearFill />,
-      title: "Auto Processing",
-      description: "Automated data processing and preparation"
-    },
-    {
-      icon: <BsCodeSlash />,
-      title: "Fine-Tuning LLMs",
-      description: "Customize language models for your needs"
-    },
-    {
       icon: <BsCpu />,
-      title: "Model Training",
-      description: "Advanced model training and optimization"
+      title: "Adaptive Learning Frameworks",
+      description: "Implement systems that continuously learn and evolve to stay ahead of challenges."
     },
     {
       icon: <FaUserCog />,
-      title: "Custom Agents",
-      description: "Build specialized AI agents"
+      title: "Visionary Insights Platform",
+      description: "Unlock actionable foresight with AI-powered predictive and prescriptive analytics."
+    },
+    {
+      icon: <BsGearFill />,
+      title: "AI-Powered Personalization",
+      description: "Deliver hyper-personalized experiences that resonate with every user interaction"
+    },
+    {
+      icon: <BsCodeSlash />,
+      title: "Real-Time Decision Intelligence",
+      description: "Leverage AI-powered insights to make smarter, faster, and data-driven decisions."
     }
   ];
 
   return (
-    <section className="capabilities-section py-5">
+    <section className="capabilities-section py-5"id="capabilities">
       <Container>
-        <h2 className="text-center mb-5" data-aos="fade-up">Platform Capabilities</h2>
+        <h2 className="text-center text-white mb-5" data-aos="fade-up">Platform Capabilities</h2>
         <Row>
           {capabilities.map((capability, index) => (
             <Col key={index} md={6} lg={3} className="mb-4" data-aos="fade-up" data-aos-delay={index * 100}>

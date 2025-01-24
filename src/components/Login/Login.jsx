@@ -27,7 +27,7 @@ function Login({ show, onHide }) {
     <Modal show={show} onHide={onHide} centered className="login-modal">
       <Modal.Body className="p-4">
         <div className="text-center mb-4">
-          <img src="/logo.svg" alt="Abacus.AI" height="30" className="mb-3" />
+          <img src="/naipunya_logo.png" alt="Abacus.AI" height="30" className="mb-3" />
           <h2 className="mb-4">{isSignUp ? 'Create your account' : 'Sign in to ChatLLM Teams'}</h2>
         </div>
 
@@ -35,10 +35,7 @@ function Login({ show, onHide }) {
         {successMessage && <Alert variant="success" className="mb-4">{successMessage}</Alert>}
 
         <div className="social-login-buttons">
-          <Button variant="outline-light" className="w-100 mb-3">
-            <FaApple className="me-2" />
-            {isSignUp ? 'Sign up' : 'Sign in'} with Apple
-          </Button>
+        
           <Button variant="outline-light" className="w-100 mb-3">
             <FaGoogle className="me-2" />
             {isSignUp ? 'Sign up' : 'Sign in'} with Google

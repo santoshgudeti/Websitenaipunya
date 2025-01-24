@@ -6,14 +6,14 @@ function Hero() {
       <Container>
         <Row className="align-items-center">
           <Col lg={6} data-aos="fade-right">
-            <h1 className="display-4 fw-bold mb-4">
-              An AI Super Assistant For Enterprises And Professionals
+            <h1 className="display-4 text-white fw-bold mb-4">
+            Innovating the Future with Intelligent Solutions Today.
             </h1>
-            <p className="lead mb-4">
-              Transform your business with state-of-the-art AI solutions designed for enterprise scale.
+            <p className="lead text-white mb-4">
+            Transforming Challenges into Opportunities with AI Brilliance.
             </p>
-            <div className="d-flex gap-3">
-              <Button className="btn-custom">Request Demo</Button>
+            <div className="d-flex justify-content-center gap-2">
+              <Button className="btn-custom">Try AI Agent</Button>
               <Button variant="outline-light">Try Enterprise</Button>
             </div>
           </Col>
