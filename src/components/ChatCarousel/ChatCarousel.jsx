@@ -12,48 +12,12 @@ function ChatCarousel() {
     },
     {
       id: 2,
-      image: "/2.png",
-      title: "Our Services",
-      description: "Flow Capture"
-    },
-    {
-      id: 3,
-      image: "/3.png",
-       title: "Our Services",
-      description: "Flow Capture"
-    },
-    {
-      id: 4,
-      image: "/4.png",
-      title: "Our Services",
-      description: "Flow Capture"
-    },
-    {
-      id: 5,
-      image: "/5.png",
-      title: "Our Services",
-      description: "Flow Capture"
-    },
-    {
-      id: 6,
-      image: "/6.png",
-      title: "Our Products",
-      description: "Flow Capture"
-    },
-    {
-      id: 7,
-      image: "/p1.png",
-       title: "Our Services",
-      description: "Flow Capture"
-    },
-    {
-      id: 8,
       image: "/p2.png",
       title: "Our Services",
       description: "Smart Supply Chain Optimization & AI-Enhanced Claims Processing"
     },
     {
-      id: 9,
+      id: 3,
       image: "/p3.png",
       title: "Our Services",
       description: "Real-Time Fraud Detection & Custom AI Solutions"

@@ -41,12 +41,7 @@ function CustomNavbar() {
               About Us
               </Nav.Link>
 
-              <Button
-                className="btn btn-light"
-                onClick={() => setShowLogin(true)}
-              >
-                Sign In
-              </Button>
+        
             </Nav>
           </Navbar.Collapse>
         </Container>

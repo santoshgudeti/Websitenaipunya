@@ -31,10 +31,10 @@ function Footer() {
                 Products
               </h5>
             <Nav className="flex-column mt-3">
-              <Nav.Link href="#" className="text-white">
+              <Nav.Link href="https://intelligentic.ai/" className="text-white">
                 INTELLIGENTIC AI
               </Nav.Link>
-              <Nav.Link href="#" className="text-white">
+              <Nav.Link href="https://skillmatrixai.com/" className="text-white">
                 SKILL MATRIX AI
               </Nav.Link>
               <Nav.Link href="#" className="text-white">
